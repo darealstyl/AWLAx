@@ -1,0 +1,1956 @@
+fileFormatVersion: 2
+guid: c48e73cac663c4f8a9a9b56ced22719e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Axolotl_Frame_1
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 119
+      height: 25
+    spriteID: f4aed3c0b1ae64928979cf594c98430a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Axolotl_Frame_25
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 4
+      width: 119
+      height: 25
+    spriteID: 70251759081a44dd197a3f52b8875f80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 4}
+  - name: Axolotl_Frame_37
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 4
+      width: 119
+      height: 25
+    spriteID: 72fe0632cf2ea4c29833234d8a9b9cba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 4}
+  - name: Axolotl_Frame_47
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 4
+      width: 119
+      height: 25
+    spriteID: df1ce56f0f36d4a20a1a64b089b2ea59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 4}
+  - name: Axolotl_Frame_2
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 37
+      width: 119
+      height: 25
+    spriteID: f5b2bdf95b99340aa93cdb39937dcb64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 37}
+  - name: Axolotl_Frame_3
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 37
+      width: 119
+      height: 25
+    spriteID: de51a98a704be45cc9c0d6a68867d427
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 37}
+  - name: Axolotl_Frame_4
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 37
+      width: 119
+      height: 25
+    spriteID: 8fc0cfe0bce904dd4aeb59aa91c2a857
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 37}
+  - name: Axolotl_Frame_5
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 37
+      width: 119
+      height: 25
+    spriteID: b798b4d851af0468fb8cc787e55f390e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 37}
+  - name: Axolotl_Frame_6
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 70
+      width: 119
+      height: 25
+    spriteID: a5857b886f1e4494e82718c89927d87a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 70}
+  - name: Axolotl_Frame_7
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 70
+      width: 119
+      height: 25
+    spriteID: 19fab3d62d0af46e4b689578641ddb2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 70}
+  - name: Axolotl_Frame_8
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 70
+      width: 119
+      height: 25
+    spriteID: 691e1574ecb1f4768ac9c570b1c02e74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 70}
+  - name: Axolotl_Frame_9
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 202
+      width: 119
+      height: 24
+    spriteID: d8375fd972ddf413b819f37bee1f875d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 202}
+  - name: Axolotl_Frame_10
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 202
+      width: 119
+      height: 24
+    spriteID: 864ad1970c462494fbeb72d809db1fd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 202}
+  - name: Axolotl_Frame_11
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 202
+      width: 119
+      height: 24
+    spriteID: c4853a124bcf9480cb2e104dd615f525
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 202}
+  - name: Axolotl_Frame_12
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 235
+      width: 119
+      height: 24
+    spriteID: f1b62871783ee4d828e69a143b9829c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 235}
+  - name: Axolotl_Frame_13
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 235
+      width: 119
+      height: 24
+    spriteID: d25898fdbe63b4cf1bbd4097532613d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 235}
+  - name: Axolotl_Frame_14
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 235
+      width: 119
+      height: 24
+    spriteID: 98af5e0d6c13f4fe0a9179356ab73806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 235}
+  - name: Axolotl_Frame_15
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 235
+      width: 119
+      height: 24
+    spriteID: 2656a55bcfc1e4eb7b53f89567b234e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 235}
+  - name: Axolotl_Frame_16
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 267
+      width: 119
+      height: 24
+    spriteID: 2181727e845894b498c8d325e394c24f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 267}
+  - name: Axolotl_Frame_17
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 267
+      width: 119
+      height: 24
+    spriteID: def7018981e924fd1bb207479c4c5147
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 267}
+  - name: Axolotl_Frame_18
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 267
+      width: 119
+      height: 24
+    spriteID: a1f5a4290771f41128744245a029e070
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 267}
+  - name: Axolotl_Frame_19
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 267
+      width: 119
+      height: 24
+    spriteID: 9549573644abd4f5c8d7c759729acd99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 267}
+  - name: Axolotl_Frame_20
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 299
+      width: 119
+      height: 24
+    spriteID: bbb26ac9ee3c54243a2d2b0838200e67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 299}
+  - name: Axolotl_Frame_21
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 299
+      width: 119
+      height: 24
+    spriteID: a48c8916169ab4dcba029feb299cede2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 299}
+  - name: Axolotl_Frame_22
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 299
+      width: 119
+      height: 24
+    spriteID: e59a52829cc76471fbd11c571d417e58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 299}
+  - name: Axolotl_Frame_23
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 70
+      width: 119
+      height: 25
+    spriteID: 9e1a9870cd0c04f2f99d3c4ea8ca3805
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 70}
+  - name: Axolotl_Frame_24
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 103
+      width: 119
+      height: 25
+    spriteID: eb5b31615ca1c4435acd4334a82ba1b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 103}
+  - name: Axolotl_Frame_26
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 103
+      width: 119
+      height: 25
+    spriteID: 9db5eb0c9a87e4e76bfd21d6dc7da25e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 103}
+  - name: Axolotl_Frame_27
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 103
+      width: 119
+      height: 25
+    spriteID: d1aacbd7b06d943438ae6500906583bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 103}
+  - name: Axolotl_Frame_28
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 103
+      width: 119
+      height: 25
+    spriteID: 82bd38efec85f464a906ebad1315e372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 103}
+  - name: Axolotl_Frame_29
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 136
+      width: 119
+      height: 25
+    spriteID: 39abf8b22a1a74754b4288a998ea53a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 136}
+  - name: Axolotl_Frame_30
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 136
+      width: 119
+      height: 25
+    spriteID: 7841be085015a44d99db4ea4e4574ee6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 136}
+  - name: Axolotl_Frame_31
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 136
+      width: 119
+      height: 25
+    spriteID: c135f8f4256fe4f7a8bd0548084b9a0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 136}
+  - name: Axolotl_Frame_32
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 136
+      width: 119
+      height: 25
+    spriteID: 76627d797ef9b40d4a26bcaa2739e5a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 136}
+  - name: Axolotl_Frame_33
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 169
+      width: 119
+      height: 25
+    spriteID: 6ae6ce2104cd943bfb55280b4aff23c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 169}
+  - name: Axolotl_Frame_34
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 299
+      width: 119
+      height: 24
+    spriteID: df72286bd0ef341a38ec575c2a8b45b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 299}
+  - name: Axolotl_Frame_35
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 331
+      width: 119
+      height: 24
+    spriteID: 7b98e8f63dadd4fd49dca33f3432771b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 331}
+  - name: Axolotl_Frame_36
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 331
+      width: 119
+      height: 24
+    spriteID: c352578166e644862bfd4d52485b55da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 331}
+  - name: Axolotl_Frame_38
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 331
+      width: 119
+      height: 24
+    spriteID: ba11024f0fd7843929ca348b80f07a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 331}
+  - name: Axolotl_Frame_39
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 331
+      width: 119
+      height: 24
+    spriteID: 4e20282dc2d9544188e9ec0d7fe4f589
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 331}
+  - name: Axolotl_Frame_40
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 363
+      width: 119
+      height: 24
+    spriteID: 469c12b77f9724677a7718c106465a83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 363}
+  - name: Axolotl_Frame_41
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 363
+      width: 119
+      height: 24
+    spriteID: d36b07a90f5e240d0a5b87d075c442bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 363}
+  - name: Axolotl_Frame_42
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 363
+      width: 119
+      height: 24
+    spriteID: aed16ee16728b4f9baa66d904cb114a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 363}
+  - name: Axolotl_Frame_43
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 363
+      width: 119
+      height: 24
+    spriteID: c92f9d548ec5442428728ea062306aba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 363}
+  - name: Axolotl_Frame_44
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 395
+      width: 119
+      height: 24
+    spriteID: b9bb8d7ed9a184301875d955ffab3087
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 395}
+  - name: Axolotl_Frame_45
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 395
+      width: 119
+      height: 24
+    spriteID: c2c40c455aa9a4496acdf24dac9f3312
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 395}
+  - name: Axolotl_Frame_46
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 395
+      width: 119
+      height: 24
+    spriteID: a78c2352e7be344509b8fce4354548a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 395}
+  - name: Axolotl_Frame_48
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 395
+      width: 119
+      height: 24
+    spriteID: dd76fac1d06ed4f11ae3faab78eb30f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 395}
+  - name: Axolotl_Frame_49
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 427
+      width: 119
+      height: 24
+    spriteID: 2653d973088764b4fafc07ae3e2086d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 427}
+  - name: Axolotl_Frame_50
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 169
+      width: 119
+      height: 25
+    spriteID: cdf1b9fb562a549dc8e94f1008a31892
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 169}
+  - name: Axolotl_Frame_51
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 169
+      width: 119
+      height: 25
+    spriteID: 492a075d8847c4dc082ed45c4a43434e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 169}
+  - name: Axolotl_Frame_52
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 169
+      width: 119
+      height: 25
+    spriteID: fe215539ab30b4583a33cb093ebcd642
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 169}
+  - name: Axolotl_Frame_53
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.3999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 202
+      width: 119
+      height: 25
+    spriteID: 544b58138061247c9a8557578110a841
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 202}
+  - name: Axolotl_Frame_54
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 427
+      width: 119
+      height: 22
+    spriteID: 9ea9cd45dc5db41bd980f7df91c86b96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 427}
+  - name: Axolotl_Frame_55
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 427
+      width: 119
+      height: 22
+    spriteID: 7284f7efe2b834e0bb055edd877584e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 427}
+  - name: Axolotl_Frame_56
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 427
+      width: 119
+      height: 22
+    spriteID: 96f692a4929934d6087394705149a4bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 427}
+  - name: Axolotl_Frame_57
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 459
+      width: 119
+      height: 22
+    spriteID: 06e9a8291f9884834a0af5ae76c27a0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 459}
+  - name: Axolotl_Frame_58
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 459
+      width: 119
+      height: 22
+    spriteID: 893e051f34c11474394cb1b8a2d21bf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 459}
+  - name: Axolotl_Frame_59
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 459
+      width: 119
+      height: 22
+    spriteID: f224f2d7cb62c442b9c04aeec34a2da8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 459}
+  - name: Axolotl_Frame_60
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 459
+      width: 119
+      height: 22
+    spriteID: c0c4dec20edd04fd4af4a402be579957
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 459}
+  - name: Axolotl_Frame_0
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 489
+      width: 119
+      height: 22
+    spriteID: 71ea192cd3468486ba08c2c2b83adb7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 489}
+  - name: Axolotl_Frame_61
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 489
+      width: 119
+      height: 22
+    spriteID: ef951100a8a0d48a9b58ea13fded401b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 489}
+  - name: Axolotl_Frame_62
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 489
+      width: 119
+      height: 22
+    spriteID: 9774c0ff3f3a846dda16ec9e697c507a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 489}
+  - name: Axolotl_Frame_63
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 489
+      width: 119
+      height: 22
+    spriteID: 61e9a66c1171f41feadfbab05cb14186
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 489}
+  - name: Axolotl_Frame_64
+    originalName: 
+    pivot: {x: 0.4621849, y: -2.7727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 519
+      width: 119
+      height: 22
+    spriteID: 0a700c2cba4ac41fbbc424f8bfba5a00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 519}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1695880237
+    name: Axolotl
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Axolotl_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: f4aed3c0b1ae64928979cf594c98430a
+    - name: Axolotl_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 70251759081a44dd197a3f52b8875f80
+    - name: Axolotl_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 72fe0632cf2ea4c29833234d8a9b9cba
+    - name: Axolotl_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: df1ce56f0f36d4a20a1a64b089b2ea59
+    - name: Axolotl_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: f5b2bdf95b99340aa93cdb39937dcb64
+    - name: Axolotl_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: de51a98a704be45cc9c0d6a68867d427
+    - name: Axolotl_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 8fc0cfe0bce904dd4aeb59aa91c2a857
+    - name: Axolotl_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: b798b4d851af0468fb8cc787e55f390e
+    - name: Axolotl_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: a5857b886f1e4494e82718c89927d87a
+    - name: Axolotl_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 19fab3d62d0af46e4b689578641ddb2f
+    - name: Axolotl_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 691e1574ecb1f4768ac9c570b1c02e74
+    - name: Axolotl_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: d8375fd972ddf413b819f37bee1f875d
+    - name: Axolotl_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 864ad1970c462494fbeb72d809db1fd6
+    - name: Axolotl_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: c4853a124bcf9480cb2e104dd615f525
+    - name: Axolotl_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: f1b62871783ee4d828e69a143b9829c8
+    - name: Axolotl_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: d25898fdbe63b4cf1bbd4097532613d0
+    - name: Axolotl_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 98af5e0d6c13f4fe0a9179356ab73806
+    - name: Axolotl_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 2656a55bcfc1e4eb7b53f89567b234e5
+    - name: Axolotl_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 2181727e845894b498c8d325e394c24f
+    - name: Axolotl_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: def7018981e924fd1bb207479c4c5147
+    - name: Axolotl_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: a1f5a4290771f41128744245a029e070
+    - name: Axolotl_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 9549573644abd4f5c8d7c759729acd99
+    - name: Axolotl_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: bbb26ac9ee3c54243a2d2b0838200e67
+    - name: Axolotl_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: a48c8916169ab4dcba029feb299cede2
+    - name: Axolotl_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: e59a52829cc76471fbd11c571d417e58
+    - name: Axolotl_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 9e1a9870cd0c04f2f99d3c4ea8ca3805
+    - name: Axolotl_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: eb5b31615ca1c4435acd4334a82ba1b8
+    - name: Axolotl_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 9db5eb0c9a87e4e76bfd21d6dc7da25e
+    - name: Axolotl_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: d1aacbd7b06d943438ae6500906583bb
+    - name: Axolotl_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 82bd38efec85f464a906ebad1315e372
+    - name: Axolotl_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 39abf8b22a1a74754b4288a998ea53a3
+    - name: Axolotl_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 7841be085015a44d99db4ea4e4574ee6
+    - name: Axolotl_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: c135f8f4256fe4f7a8bd0548084b9a0d
+    - name: Axolotl_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 76627d797ef9b40d4a26bcaa2739e5a5
+    - name: Axolotl_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 6ae6ce2104cd943bfb55280b4aff23c2
+    - name: Axolotl_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: df72286bd0ef341a38ec575c2a8b45b2
+    - name: Axolotl_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 7b98e8f63dadd4fd49dca33f3432771b
+    - name: Axolotl_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: c352578166e644862bfd4d52485b55da
+    - name: Axolotl_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: ba11024f0fd7843929ca348b80f07a42
+    - name: Axolotl_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 4e20282dc2d9544188e9ec0d7fe4f589
+    - name: Axolotl_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 469c12b77f9724677a7718c106465a83
+    - name: Axolotl_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: d36b07a90f5e240d0a5b87d075c442bf
+    - name: Axolotl_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: aed16ee16728b4f9baa66d904cb114a0
+    - name: Axolotl_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: c92f9d548ec5442428728ea062306aba
+    - name: Axolotl_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: b9bb8d7ed9a184301875d955ffab3087
+    - name: Axolotl_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: c2c40c455aa9a4496acdf24dac9f3312
+    - name: Axolotl_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: a78c2352e7be344509b8fce4354548a5
+    - name: Axolotl_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: dd76fac1d06ed4f11ae3faab78eb30f9
+    - name: Axolotl_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 24
+      spriteId: 2653d973088764b4fafc07ae3e2086d2
+    - name: Axolotl_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: cdf1b9fb562a549dc8e94f1008a31892
+    - name: Axolotl_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 492a075d8847c4dc082ed45c4a43434e
+    - name: Axolotl_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: fe215539ab30b4583a33cb093ebcd642
+    - name: Axolotl_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 9
+        y: 60
+        width: 119
+        height: 25
+      spriteId: 544b58138061247c9a8557578110a841
+    - name: Axolotl_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 9ea9cd45dc5db41bd980f7df91c86b96
+    - name: Axolotl_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 7284f7efe2b834e0bb055edd877584e1
+    - name: Axolotl_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 96f692a4929934d6087394705149a4bc
+    - name: Axolotl_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 06e9a8291f9884834a0af5ae76c27a0e
+    - name: Axolotl_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 893e051f34c11474394cb1b8a2d21bf6
+    - name: Axolotl_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: f224f2d7cb62c442b9c04aeec34a2da8
+    - name: Axolotl_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: c0c4dec20edd04fd4af4a402be579957
+    - name: Axolotl_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 71ea192cd3468486ba08c2c2b83adb7e
+    - name: Axolotl_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: ef951100a8a0d48a9b58ea13fded401b
+    - name: Axolotl_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 9774c0ff3f3a846dda16ec9e697c507a
+    - name: Axolotl_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 61e9a66c1171f41feadfbab05cb14186
+    - name: Axolotl_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 9
+        y: 61
+        width: 119
+        height: 22
+      spriteId: 0a700c2cba4ac41fbbc424f8bfba5a00
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}
