@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
                 rb.velocity = inputAxes * dashForce;
                 dashElapsed = 0.0f;
+                TakeRecoilDamage();
                 animator.SetBool("isSwimming", true);
             }
             else
@@ -87,9 +88,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void TakeDamage(float damage)
+    void TakeRecoilDamage()
     {
         currentHealth -= 10.0f;
         healthBar.SetHealth(currentHealth);
     }
+
+
 }
