@@ -6,6 +6,7 @@ public class LevelTimer : MonoBehaviour
     public bool levelStarted { get; private set; }
     private float startTime;
     public TMPro.TextMeshProUGUI timerText;
+    public TMPro.TextMeshProUGUI startText;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -32,5 +33,7 @@ public class LevelTimer : MonoBehaviour
         levelStarted = true;
         startTime = Time.time;
         // You can also trigger any other actions that need to happen when the level starts
+        if (startText != null)
+            startText.gameObject.SetActive(false);
     }
 }
