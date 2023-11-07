@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     bool dashInput = false;
     float dashElapsed;
 
+    public LevelTimer levelTimer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,14 +43,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
-        dashInput = !dashInput ? Input.GetKeyDown(KeyCode.Space) : dashInput;
+        if (levelTimer.levelStarted)
+        {
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
+            dashInput = !dashInput ? Input.GetKeyDown(KeyCode.Space) : dashInput;
+        }
     }
 
     void FixedUpdate()
     {
-        if (dashInput)
+        if (dashInput && levelTimer.levelStarted)
         {
             if (dashElapsed >= dashDuration)
             {
@@ -71,7 +76,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (!dashInput)
+        if (!dashInput && levelTimer.levelStarted)
         {
             if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f)
             {
