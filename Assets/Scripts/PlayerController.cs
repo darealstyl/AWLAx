@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     float dashElapsed;
 
     public LevelTimer levelTimer;
+    private bool hasDashed;
 
     // Start is called before the first frame update
     void Start()
@@ -61,19 +62,13 @@ public class PlayerController : MonoBehaviour
             {
                 dashInput = true;
             }
-            else
-            {
-                dashInput = false;
-            }
+
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
                 jumpInput = true;
             }
-            else
-            {
-                jumpInput = false;
-            }
+
 
         }
     }
@@ -82,9 +77,13 @@ public class PlayerController : MonoBehaviour
     {
         // Check if the player is grounded
         isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null;
-        //
-        //
         Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+
+        if (isGrounded)
+        {
+            hasDashed = false;
+        }
+
         // If a jump is requested and the player is grounded then add a vertical force
         if (jumpInput && isGrounded)
         {
@@ -93,39 +92,48 @@ public class PlayerController : MonoBehaviour
         }
 
         // Handle dashing
-        if (dashInput && dashElapsed >= dashDuration)
+        if (dashInput && dashElapsed >= dashDuration && !hasDashed)
         {
-            Vector2 inputAxes = new Vector2(horizontal, vertical).normalized; // Assuming dash only happens horizontally
-            rb.velocity = inputAxes * dashForce;
-            dashElapsed = 0.0f;
+            Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
+            rb.velocity = inputAxes * dashForce; // Apply the dash force in the input direction
+            dashElapsed = 0.0f; // Reset dash timer
             TakeRecoilDamage();
             animator.SetBool("isSwimming", true);
             dashInput = false; // Reset the dash input flag immediately
+            hasDashed = true;
         }
-
-        // Update the dashElapsed time if a dash has been initiated
-        if (dashElapsed < dashDuration)
+        else if (dashElapsed < dashDuration)
         {
             dashElapsed += Time.fixedDeltaTime;
-            if (dashElapsed >= dashDuration)
-            {
-                animator.SetBool("isSwimming", false);
-                rb.velocity = Vector2.zero; // Stop horizontal dash force
-            }
-        }
-
-        // Running logic
-        if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f)
-        {
-            rb.velocity = new Vector3(horizontal * currentRunSpeed, rb.velocity.y);
-            spriteRenderer.flipX = horizontal > 0; // Flipping the sprite based on direction
-            animator.SetBool("isRunning", true);
         }
         else
         {
-            animator.SetBool("isRunning", false);
+            // Ensure the dashElapsed timer does not exceed the dashDuration + threshold to avoid small deltaTime additions
+            dashElapsed = Mathf.Min(dashElapsed, dashDuration + 0.01f);
+
+            // Running logic
+            if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f)
+            {
+                float targetSpeed = horizontal * currentRunSpeed;
+                // Apply target speed but do not modify y velocity
+                rb.velocity = new Vector2(targetSpeed, rb.velocity.y);
+                spriteRenderer.flipX = horizontal > 0; // Flipping the sprite based on direction (note: < 0 for flip when moving left)
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+        }
+
+        // Reset swimming animation if dash is complete
+        if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
+        {
+            animator.SetBool("isSwimming", false);
         }
     }
+
+
 
     void TakeRecoilDamage()
     {
