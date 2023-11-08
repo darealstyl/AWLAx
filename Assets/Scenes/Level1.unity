@@ -3071,13 +3071,13 @@ MonoBehaviour:
   maxHealth: 50
   maxRunSpeed: 10
   jumpForce: 15
-  dashForce: 30
+  dashForce: 22
   dashDuration: 0.25
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   groundCheck: {fileID: 1167281303}
-  groundCheckDistance: 0.48
+  groundCheckDistance: 0.21
   levelTimer: {fileID: 464577457}
 --- !u!1 &1658536462
 GameObject:

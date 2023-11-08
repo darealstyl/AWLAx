@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     float currentHealth;
     float currentRunSpeed;
 
-    bool isGrounded; // A flag to check if the player is grounded
+    bool isGrounded = false; // A flag to check if the player is grounded
     public LayerMask groundLayer; // Set this in the inspector to the layer your ground is on
     public Transform groundCheck; // Assign a child GameObject to act as the ground check position
     public float groundCheckDistance = 0.2f; // Radius of the overlap circle to determine if grounded
@@ -69,15 +69,18 @@ public class PlayerController : MonoBehaviour
                 jumpInput = true;
             }
 
-
+            
         }
     }
 
     void FixedUpdate()
     {
-        // Check if the player is grounded
-        isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null;
-        Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+        if (levelTimer.levelStarted)
+        {
+            // Check if the player is grounded
+            isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null;
+            Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+        }
 
         if (isGrounded)
         {
@@ -124,6 +127,11 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("isRunning", false);
             }
+        }
+
+        if (dashInput && !isGrounded)
+        {
+            dashInput = false;
         }
 
         // Reset swimming animation if dash is complete
