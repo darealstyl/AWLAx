@@ -23,14 +23,14 @@ public class PlayerController : MonoBehaviour
     float currentHealth;
     float currentRunSpeed;
 
-    bool isGrounded = false; // A flag to check if the player is grounded
+    public bool isGrounded = false; // A flag to check if the player is grounded
     public LayerMask groundLayer; // Set this in the inspector to the layer your ground is on
     public Transform groundCheck; // Assign a child GameObject to act as the ground check position
     public float groundCheckDistance = 0.2f; // Radius of the overlap circle to determine if grounded
 
     float horizontal = 0.0f;
     float vertical = 0.0f;
-    bool canRun = true;
+    public bool canRun = true;
     bool dashInput = false;
     bool jumpInput = false; // Flag to check if jump was requested
     public float dashElapsed;
@@ -40,14 +40,14 @@ public class PlayerController : MonoBehaviour
     private bool hasDashed;
     public bool death;
 
-    public float rotationClamp = 20.0f;
+    public float rotationClamp = 15.0f;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponentInParent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
 
         currentHealth = maxHealth;
