@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
             
         }
+
     }
 
     void FixedUpdate()
@@ -143,11 +144,16 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isSwimming", false);
         }
-        regenHealth();
-        Debug.Log(currentHealth);
+        if (!death)
+        {
+            regenHealth();
+        }
+        //Debug.Log(currentHealth);
         if (currentHealth <= 0)
         {
             death = true;
+            levelTimer.levelStarted = false;
+            rb.velocity = new Vector2(0, 0);
         }
     }
 

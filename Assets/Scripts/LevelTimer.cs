@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class LevelTimer : MonoBehaviour
 {
-    public bool levelStarted { get; private set; }
+    public bool levelStarted { get; set; }
     private float startTime;
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI startText;
@@ -36,5 +36,10 @@ public class LevelTimer : MonoBehaviour
         // You can also trigger any other actions that need to happen when the level starts
         if (startText != null)
             startText.gameObject.SetActive(false);
+    }
+
+    public float GetCurrentTime()
+    {
+        return currentTime;
     }
 }
