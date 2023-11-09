@@ -3,10 +3,11 @@ using UnityEngine.UI;
 
 public class LevelTimer : MonoBehaviour
 {
-    public bool levelStarted { get; private set; }
+    public bool levelStarted { get; set; }
     private float startTime;
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI startText;
+    public float currentTime;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,7 +21,7 @@ public class LevelTimer : MonoBehaviour
         // If the level has started, update the timer
         if (levelStarted)
         {
-            float currentTime = Time.time - startTime;
+            currentTime = Time.time - startTime;
             // You can use currentTime to display the timer on the screen
             // Update the timerText with the current time
             timerText.text = "Timer: " + currentTime.ToString("F2");
@@ -35,5 +36,10 @@ public class LevelTimer : MonoBehaviour
         // You can also trigger any other actions that need to happen when the level starts
         if (startText != null)
             startText.gameObject.SetActive(false);
+    }
+
+    public float GetCurrentTime()
+    {
+        return currentTime;
     }
 }
