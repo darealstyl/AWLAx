@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
         if (dashInput && dashElapsed >= dashDuration && !hasDashed)
         {
             Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
-            rb.velocity = inputAxes * dashForce; // Apply the dash force in the input direction
+            rb.velocity += inputAxes * dashForce; // Apply the dash force in the input direction
             dashElapsed = 0.0f; // Reset dash timer
             TakeRecoilDamage();
             animator.SetBool("isSwimming", true);
