@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     bool canRun = true;
     bool dashInput = false;
     bool jumpInput = false; // Flag to check if jump was requested
-    float dashElapsed;
+    public float dashElapsed;
     float dashCooldownElapsed;
 
     public LevelTimer levelTimer;
@@ -147,6 +147,12 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isRunning", false);
             }
 
+        }
+
+        if (death)
+        {
+            rb.velocity = Vector2.zero;
+            gameObject.SetActive(false);
         }
 
     }

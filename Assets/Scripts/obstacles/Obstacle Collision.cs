@@ -13,7 +13,7 @@ public class ObstacleCollision : MonoBehaviour
             // Assuming the other GameObject has a health script
             PlayerController player = collision.GetComponent<PlayerController>();
 
-            if (player != null)
+            if (player != null && player.dashElapsed >= player.dashDuration)
             {
                 // Deal damage to the player
                 player.TakeDamage(damage);

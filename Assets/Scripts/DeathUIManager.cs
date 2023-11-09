@@ -23,7 +23,6 @@ public class DeathUIManager : MonoBehaviour
         if (!hasPlayerDied && playerController.death)
         {
             hasPlayerDied = true; // Prevents this block from running again
-
             // Show the 'You Died' text
             if (deathText != null)
             {
