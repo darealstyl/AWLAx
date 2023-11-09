@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
     private bool hasDashed;
     public bool death;
 
+    public float rotationClamp = 20.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -155,6 +157,19 @@ public class PlayerController : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        if (isGrounded)
+        {
+            // Smoothly interpolate the rotation back to 0 when grounded
+            float currentZRotation = transform.eulerAngles.z;
+            // Use Mathf.LerpAngle to interpolate between the current rotation and 0
+            float newZRotation = Mathf.LerpAngle(currentZRotation, 0, Time.fixedDeltaTime * 20.0f); // Adjust the multiplier to change the smoothing speed
+            transform.eulerAngles = new Vector3(0, 0, newZRotation);
+        }
+        else
+        {
+            RotatePlayerBasedOnVelocity();
+        }
+
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -203,5 +218,22 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
         healthBar.SetHealth(currentHealth);
     }
+    void RotatePlayerBasedOnVelocity()
+    {
+        // Calculate rotation amount based on y velocity
+        float rotation = rb.velocity.y * 5.0f; // Change the multiplier to adjust the sensitivity
+
+        // If the player is moving left (negative x velocity), invert the rotation angle
+        if (rb.velocity.x < 0)
+        {
+            rotation *= -1.0f;
+        }
+
+        rotation = Mathf.Clamp(rotation, -rotationClamp, rotationClamp); // Clamp the rotation between +/- rotationClamp degrees
+
+        // Apply the rotation
+        transform.eulerAngles = new Vector3(0, 0, rotation);
+    }
+
 }
 
