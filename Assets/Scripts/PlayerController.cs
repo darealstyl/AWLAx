@@ -190,5 +190,12 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
         healthBar.SetHealth(currentHealth);
     }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
+        healthBar.SetHealth(currentHealth);
+    }
 }
 
