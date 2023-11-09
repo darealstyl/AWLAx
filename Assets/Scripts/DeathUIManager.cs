@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class DeathUIManager : MonoBehaviour
 {
@@ -23,7 +25,7 @@ public class DeathUIManager : MonoBehaviour
         if (!hasPlayerDied && playerController.death)
         {
             hasPlayerDied = true; // Prevents this block from running again
-            // Show the 'You Died' text
+                                  // Show the 'You Died' text
             if (deathText != null)
             {
                 deathText.gameObject.SetActive(true);
@@ -32,9 +34,17 @@ public class DeathUIManager : MonoBehaviour
             // Show the final time
             if (finalTimeText != null && levelTimer != null)
             {
-                finalTimeText.text = "Final Time: " + levelTimer.GetCurrentTime(); // Assuming GetFinalTime() is your method for getting the time
+                finalTimeText.text = "Final Time: " + levelTimer.GetCurrentTime(); // Assuming GetCurrentTime() is your method for getting the time
                 finalTimeText.gameObject.SetActive(true);
             }
         }
+
+        // Check if the player is dead and the Enter key is pressed
+        if (hasPlayerDied && Input.GetKeyDown(KeyCode.Return))
+        {
+            // Reload the current scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
+
 }
