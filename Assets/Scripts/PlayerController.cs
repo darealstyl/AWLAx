@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
                 jumpInput = true;
             }
 
+            Debug.Log("Velocity.x: " + rb.velocity.x);
+            Debug.Log("Velocity.y: " + rb.velocity.y);
 
         }
 
@@ -85,7 +87,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Handle dashing
-        if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown)
+        if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown && ((horizontal > 0.5f || horizontal < -0.5f) || (vertical < -0.5f || vertical > 0.5f)))
         {
             Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
             rb.velocity += inputAxes * dashForce; // Apply the dash force in the input direction
@@ -128,6 +130,8 @@ public class PlayerController : MonoBehaviour
 
             }
 
+            
+
             // If a jump is requested and the player is grounded then add a vertical force
             if (jumpInput && isGrounded)
             {
@@ -150,6 +154,10 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+
+        rb.velocity = new Vector2(
+                Mathf.Clamp(rb.velocity.x, -25f, 25f),
+                Mathf.Clamp(rb.velocity.y, -25f, 25f));
 
         if (death)
         {

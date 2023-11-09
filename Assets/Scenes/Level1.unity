@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.4, y: 0.6}
-  parallaxSpeed: 1
+  parallaxSpeed: 0.9
 --- !u!212 &22479224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.2, y: 0.05}
-  parallaxSpeed: 1
+  parallaxSpeed: 0.9
 --- !u!212 &499265725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.6, y: 0.7}
-  parallaxSpeed: 1
+  parallaxSpeed: 0.9
 --- !u!212 &547113612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5694,10 +5694,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   groundCheck: {fileID: 1167281303}
-  groundCheckDistance: 0.5
+  groundCheckDistance: 0.4
   dashElapsed: 0
   levelTimer: {fileID: 464577457}
   death: 0
+  rotationClamp: 20
 --- !u!114 &1565283374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5792,7 +5793,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.625
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5882,8 +5883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
   m_AssetsPPU: 32
-  m_RefResolutionX: 400
-  m_RefResolutionY: 200
+  m_RefResolutionX: 960
+  m_RefResolutionY: 540
   m_CropFrame: 0
   m_GridSnapping: 1
   m_FilterMode: 0
@@ -5907,7 +5908,7 @@ MonoBehaviour:
   target: {fileID: 1565283370}
   smoothSpeed: 1
   offset: {x: 0, y: 4.5, z: 0}
-  minX: -1000
+  minX: -7
   maxX: 1000
   minY: 4.5
   maxY: 1000

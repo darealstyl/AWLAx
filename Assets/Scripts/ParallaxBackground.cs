@@ -23,9 +23,11 @@ public class ParallaxBackground : MonoBehaviour
     {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
         Vector3 parallaxMovement = new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
-        Vector3 targetPosition = transform.position + parallaxMovement;
+        
+        transform.position += parallaxMovement;
+        //Vector3 targetPosition = transform.position + parallaxMovement;
         // Use Lerp to smoothly transition to the target position
-        transform.position = Vector3.Lerp(transform.position, targetPosition, parallaxSpeed * Time.deltaTime);
+        //transform.position = Vector3.Lerp(transform.position, targetPosition, parallaxSpeed * Time.deltaTime);
         lastCameraPosition = cameraTransform.position;
 
         // Repeat the background texture when it's out of bounds
