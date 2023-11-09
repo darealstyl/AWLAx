@@ -8,12 +8,14 @@ public class FinishLine : MonoBehaviour
     public TMPro.TextMeshProUGUI levelCompleteText; // Assign your 'Level Complete' Text component in the inspector
     public LevelTimer levelTimer; // Assign your LevelTimer script in the inspector
     public TMPro.TextMeshProUGUI finalTimeText; // Assign your final time Text component in the inspector
-
+    [SerializeField] private SceneFader sceneFader;
+    private bool isFinished;
     private void Start()
     {
         // Make sure the 'Level Complete' text and final time text is not visible at the start
         if (levelCompleteText != null) levelCompleteText.gameObject.SetActive(false);
         if (finalTimeText != null) finalTimeText.gameObject.SetActive(false);
+        isFinished = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,7 +46,12 @@ public class FinishLine : MonoBehaviour
                 finalTimeText.text = "Final Time: " + levelTimer.GetCurrentTime(); // Assuming GetCurrentTime() is your method for getting the time
                 finalTimeText.gameObject.SetActive(true);
             }
-            
+            isFinished = true;
+        }
+
+        if (isFinished && Input.GetKeyDown(KeyCode.Escape))
+        {
+            sceneFader.FadeToScene(0);
         }
     }
 }
