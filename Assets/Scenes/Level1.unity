@@ -5238,14 +5238,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5434,7 +5434,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.017873049, y: 0.2572888}
+  m_Offset: {x: 0, y: 0.2572888}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5444,8 +5444,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.048287, y: 0.77597284}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.8076748, y: 0.67750454}
+  m_EdgeRadius: 0.05
 --- !u!50 &1565283372
 Rigidbody2D:
   serializedVersion: 4
@@ -5491,12 +5491,13 @@ MonoBehaviour:
   jumpForce: 15
   dashForce: 22
   dashDuration: 0.25
+  dashCooldown: 0.5
   regenRate: 0.08
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   groundCheck: {fileID: 1167281303}
-  groundCheckDistance: 0.21
+  groundCheckDistance: 0.5
   levelTimer: {fileID: 464577457}
   death: 0
 --- !u!114 &1565283374
@@ -5593,7 +5594,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 13.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
