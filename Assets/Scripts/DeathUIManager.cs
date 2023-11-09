@@ -9,7 +9,7 @@ public class DeathUIManager : MonoBehaviour
     public TMPro.TextMeshProUGUI deathText; // Assign your 'You Died' Text component in the inspector
     public LevelTimer levelTimer; // Assign your LevelTimer script in the inspector
     public TMPro.TextMeshProUGUI finalTimeText; // Assign your final time Text component in the inspector
-
+    [SerializeField] SceneFader sceneFader;
     private bool hasPlayerDied = false;
 
     void Start()
@@ -43,8 +43,15 @@ public class DeathUIManager : MonoBehaviour
         if (hasPlayerDied && Input.GetKeyDown(KeyCode.Return))
         {
             // Reload the current scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            sceneFader.FadeToScene(SceneManager.GetActiveScene().buildIndex);
         }
+        else if (hasPlayerDied && Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Quit the game
+            sceneFader.FadeToScene(0);
+        }
+
     }
 
 }
