@@ -5582,7 +5582,7 @@ MonoBehaviour:
   jumpForce: 15
   dashForce: 22
   dashDuration: 0.25
-  slideSpeed: 1
+  dashCooldown: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
