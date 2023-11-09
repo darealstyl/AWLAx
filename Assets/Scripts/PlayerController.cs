@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10.0f; // Set your desired jump force
     public float dashForce;
     public float dashDuration;
+    public float dashCooldown = 0.5f;
 
     float currentHealth;
     float currentRunSpeed;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     bool dashInput = false;
     bool jumpInput = false; // Flag to check if jump was requested
     float dashElapsed;
+    float dashCooldownElapsed;
 
     public LevelTimer levelTimer;
 
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
         currentRunSpeed = maxRunSpeed;
         dashElapsed = dashDuration;
+        dashCooldownElapsed = dashCooldown;
     }
 
     // Update is called once per frame
@@ -74,7 +77,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Handle dashing
-        if (dashInput && dashElapsed >= dashDuration)
+        if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown)
         {
             Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
             rb.velocity += inputAxes * dashForce; // Apply the dash force in the input direction
@@ -87,10 +90,20 @@ public class PlayerController : MonoBehaviour
         else if (dashElapsed < dashDuration)
         {
             dashElapsed += Time.fixedDeltaTime;
+            if (dashElapsed >= dashDuration)
+            {
+                dashInput = false;
+                animator.SetBool("isSwimming", false);
+                dashCooldownElapsed = 0.0f;
+            }
         }
         else if (dashElapsed >= dashDuration)
         {
-            dashInput = false;
+
+            if (dashCooldownElapsed < dashCooldown)
+            {
+                dashCooldownElapsed += Time.fixedDeltaTime;
+            }
 
             if (levelTimer.levelStarted)
             {
@@ -130,13 +143,6 @@ public class PlayerController : MonoBehaviour
 
         }
 
-
-
-        // Reset swimming animation if dash is complete
-        if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
-        {
-            animator.SetBool("isSwimming", false);
-        }
     }
 
     void OnCollisionStay2D(Collision2D collision)
