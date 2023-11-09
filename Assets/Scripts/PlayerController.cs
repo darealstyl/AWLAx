@@ -114,8 +114,14 @@ public class PlayerController : MonoBehaviour
             if (levelTimer.levelStarted)
             {
                 // Check if the player is grounded
-                isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null;
+                float halfColliderWidth = boxCollider.size.x / 2.0f;
+
+                isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
+                || Physics2D.Raycast(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null
+                || Physics2D.Raycast(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null;
                 Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+                Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+                Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
 
 
             }
@@ -126,12 +132,6 @@ public class PlayerController : MonoBehaviour
                 rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
                 jumpInput = false; // Reset the jump input flag
             }
-
-            // float halfColliderWidth = boxCollider.size.x / 2.0f;
-            // bool isCollidingRight = Physics2D.Raycast(rb.position, Vector2.right, groundCheckDistance + halfColliderWidth, groundLayer).collider != null;
-            // bool isCollidingLeft = Physics2D.Raycast(rb.position, Vector2.left, groundCheckDistance + halfColliderWidth, groundLayer).collider != null;
-            // Debug.DrawRay(rb.position, Vector2.right * (groundCheckDistance + halfColliderWidth), Color.red);
-            // Debug.DrawRay(rb.position, Vector2.left * (groundCheckDistance + halfColliderWidth), Color.red);
 
             // Running logic
             if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f && canRun)
