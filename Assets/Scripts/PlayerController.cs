@@ -155,6 +155,22 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
+        {
+            animator.SetBool("isSwimming", false);
+        }
+        if (!death)
+        {
+            regenHealth();
+        }
+        //Debug.Log(currentHealth);
+        if (currentHealth <= 0)
+        {
+            death = true;
+            levelTimer.levelStarted = false;
+            rb.velocity = new Vector2(0, 0);
+        }
+
         rb.velocity = new Vector2(
                 Mathf.Clamp(rb.velocity.x, -25f, 25f),
                 Mathf.Clamp(rb.velocity.y, -25f, 25f));
@@ -188,21 +204,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Reset swimming animation if dash is complete
-        if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
-        {
-            animator.SetBool("isSwimming", false);
-        }
-        if (!death)
-        {
-            regenHealth();
-        }
-        //Debug.Log(currentHealth);
-        if (currentHealth <= 0)
-        {
-            death = true;
-            levelTimer.levelStarted = false;
-            rb.velocity = new Vector2(0, 0);
-        }
+        
     }
 
     void regenHealth()
