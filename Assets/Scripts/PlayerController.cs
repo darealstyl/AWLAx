@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float dashForce;
     public float dashDuration;
 
+    [SerializeField] private float regenRate = 0.08f; // Add this to control the regen rate
+
     float currentHealth;
     float currentRunSpeed;
 
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     public LevelTimer levelTimer;
     private bool hasDashed;
+    public bool death;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
         currentRunSpeed = maxRunSpeed;
         dashElapsed = dashDuration;
+        death = false;
     }
 
     // Update is called once per frame
@@ -139,13 +143,26 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isSwimming", false);
         }
+        regenHealth();
+        Debug.Log(currentHealth);
+        if (currentHealth <= 0)
+        {
+            death = true;
+        }
     }
 
+    void regenHealth()
+    {
+        currentHealth += regenRate;
+        currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
+        healthBar.SetHealth(currentHealth);
+    }
 
 
     void TakeRecoilDamage()
     {
         currentHealth -= 10.0f;
+        currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
         healthBar.SetHealth(currentHealth);
     }
 }

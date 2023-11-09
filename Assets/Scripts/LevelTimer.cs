@@ -7,6 +7,7 @@ public class LevelTimer : MonoBehaviour
     private float startTime;
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI startText;
+    public float currentTime;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,7 +21,7 @@ public class LevelTimer : MonoBehaviour
         // If the level has started, update the timer
         if (levelStarted)
         {
-            float currentTime = Time.time - startTime;
+            currentTime = Time.time - startTime;
             // You can use currentTime to display the timer on the screen
             // Update the timerText with the current time
             timerText.text = "Timer: " + currentTime.ToString("F2");
