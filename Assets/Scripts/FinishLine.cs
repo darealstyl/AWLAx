@@ -18,6 +18,14 @@ public class FinishLine : MonoBehaviour
         isFinished = false;
     }
 
+    private void Update()
+    {
+        if (isFinished && Input.GetKeyDown(KeyCode.Escape))
+        {
+            sceneFader.FadeToScene(0);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the colliding object is the player
@@ -49,9 +57,6 @@ public class FinishLine : MonoBehaviour
             isFinished = true;
         }
 
-        if (isFinished && Input.GetKeyDown(KeyCode.Escape))
-        {
-            sceneFader.FadeToScene(0);
-        }
+        
     }
 }
