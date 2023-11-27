@@ -7,25 +7,82 @@ using UnityEditor;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private SceneFader sceneFader;
-    public void StartGame()
+    [SerializeField] private GameObject mainMenuPanel;
+    [SerializeField] private GameObject levelSelectPanel;
+
+    private bool isMoving;
+    private float moveSpeed = 900f;
+    private Vector3 mainMenuStart;
+    private Vector3 levelSelectStart;
+    private Vector3 mainMenuTarget;
+    private Vector3 levelSelectTarget;
+    private float movementTime = 0f;
+    private float totalMovementDuration = 1f; // Duration of the entire movement
+
+    private void Start()
+    {
+        mainMenuPanel.transform.position = Vector3.zero;
+        levelSelectPanel.transform.position = new Vector3(Screen.width, 0, 0);
+    }
+
+    public void StartGame(int i)
     {
         //SceneManager.LoadScene(1);
-        sceneFader.FadeToScene(1);
+        sceneFader.FadeToScene(i);
     }
 
     public void ShowCredits()
     {
         SceneManager.LoadScene("Credits");
     }
+
     public void Quit()
     {
-        // If we're running in the Unity Editor
 #if UNITY_EDITOR
-        // Stop playing the scene in the editor
         EditorApplication.isPlaying = false;
 #endif
-
-        // Quit the application
         Application.Quit();
+    }
+
+    public void MoveToLevelSelect()
+    {
+        mainMenuStart = mainMenuPanel.transform.position;
+        levelSelectStart = levelSelectPanel.transform.position;
+
+        mainMenuTarget = new Vector3(-Screen.width, 0, 0);
+        levelSelectTarget = Vector3.zero;
+
+        movementTime = 0f;
+        isMoving = true;
+    }
+
+    public void BackToMainMenu()
+    {
+        mainMenuStart = mainMenuPanel.transform.position;
+        levelSelectStart = levelSelectPanel.transform.position;
+
+        mainMenuTarget = Vector3.zero;
+        levelSelectTarget = new Vector3(Screen.width, 0, 0);
+
+        movementTime = 0f;
+        isMoving = true;
+    }
+
+    private void Update()
+    {
+        if (isMoving)
+        {
+            movementTime += Time.deltaTime;
+            float progress = movementTime / totalMovementDuration;
+            float easedProgress = Mathf.SmoothStep(0, 1, progress); // Easing using SmoothStep
+
+            mainMenuPanel.transform.position = Vector3.Lerp(mainMenuStart, mainMenuTarget, easedProgress);
+            levelSelectPanel.transform.position = Vector3.Lerp(levelSelectStart, levelSelectTarget, easedProgress);
+
+            if (progress >= 1f)
+            {
+                isMoving = false;
+            }
+        }
     }
 }

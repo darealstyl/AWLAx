@@ -8,7 +8,7 @@ public class SceneFader : MonoBehaviour
     public Image fadeImage;
     public float fadeSpeed = 1.0f;
 
-    private void Start()
+    private void Awake()
     {
         StartCoroutine(FadeIn());
     }
