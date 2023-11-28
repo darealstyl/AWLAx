@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public ParticleSystem dustEffect;
+
     public HealthBar healthBar;
     Animator animator;
     SpriteRenderer spriteRenderer;
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     public float rotationClamp = 15.0f;
 
+    private float previousHorizontal = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,12 +79,27 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
+                dustEffect.Play();
                 jumpInput = true;
             }
 
             Debug.Log("Velocity.x: " + rb.velocity.x);
             Debug.Log("Velocity.y: " + rb.velocity.y);
 
+            float halfColliderWidth = boxCollider.size.x / 2.0f;
+
+            isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
+            || Physics2D.Raycast(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null
+            || Physics2D.Raycast(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null;
+            Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+            Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+            Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+
+            if (isGrounded && (horizontal > 0 && previousHorizontal <= 0) || (horizontal < 0 && previousHorizontal >= 0))
+            {
+                dustEffect.Play();
+            }
+            previousHorizontal = horizontal;
         }
 
     }
@@ -118,14 +138,7 @@ public class PlayerController : MonoBehaviour
             if (levelTimer.levelStarted)
             {
                 // Check if the player is grounded
-                float halfColliderWidth = boxCollider.size.x / 2.0f;
-
-                isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
-                || Physics2D.Raycast(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null
-                || Physics2D.Raycast(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null;
-                Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
-                Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
-                Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+                
 
 
             }
@@ -146,15 +159,19 @@ public class PlayerController : MonoBehaviour
                 // Apply target speed but do not modify y velocity
                 rb.velocity = new Vector2(targetSpeed, rb.velocity.y);
                 spriteRenderer.flipX = horizontal > 0; // Flipping the sprite based on direction (note: < 0 for flip when moving left)
+                
+                
+                
+                
                 animator.SetBool("isRunning", true);
             }
             else
             {
                 animator.SetBool("isRunning", false);
             }
-
+            
         }
-
+        
         if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
         {
             animator.SetBool("isSwimming", false);
