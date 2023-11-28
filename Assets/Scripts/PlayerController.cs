@@ -212,6 +212,21 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy")) // Check if the collider is an enemy
+        {
+            Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // Direction away from the enemy
+            float knockbackForce = 5.0f; // Set the desired knockback force
+
+            rb.velocity = Vector2.zero; // Optional: reset current velocity
+            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+
+            //TakeDamage(5.0f); // Apply damage to the player, if needed
+        }
+
+        // Existing collision handling...
+    }
 
     void OnCollisionStay2D(Collision2D collision)
     {
