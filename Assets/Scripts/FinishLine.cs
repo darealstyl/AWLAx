@@ -32,14 +32,14 @@ public class FinishLine : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
             // Stop player activity
-            playerController.enabled = false; // Assuming the player has a script named 'PlayerController' that controls movement
+             // Assuming the player has a script named 'PlayerController' that controls movement
             Rigidbody2D rb = playerController.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.velocity = Vector2.zero; // Stop all movement
                 rb.isKinematic = true; // Prevent further physics interactions
             }
-
+            playerController.enabled = false;
             // Display 'Level Complete' text
             if (levelCompleteText != null)
             {

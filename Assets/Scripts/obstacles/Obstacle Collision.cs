@@ -21,16 +21,12 @@ public class ObstacleCollision : MonoBehaviour
 
             if (player != null && player.dashElapsed >= player.dashDuration)
             {
-                //player.TakeDamage(damage);
+                player.TakeDamage(damage);
                  // Update the last damage time
             }
 
             player.canRun = false;
-        }
-
-        if (collision.CompareTag("Player"))
-        {
-/*            Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = collision.GetComponentInParent<Rigidbody2D>();
             Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
             knockbackDirection.y = 0.8f; // Adjust the vertical component of the knockback
             if (knockbackDirection.x < 0)
@@ -45,9 +41,9 @@ public class ObstacleCollision : MonoBehaviour
             float knockbackForce = 10.0f;
             rb.velocity = Vector2.zero;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-
-            Debug.Log("Knockback" + knockbackDirection);*/
-
+            player.knockedBack = false;
+            player.runAgain();
+            Debug.Log("Knockback" + knockbackDirection);
         }
         lastDamageTime = Time.time;
     }

@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public float rotationClamp = 15.0f;
 
     private float previousHorizontal = 0.0f;
+    public bool knockedBack;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
         dashElapsed = dashDuration;
         dashCooldownElapsed = dashCooldown;
         death = false;
+        knockedBack = false;
     }
 
     // Update is called once per frame
@@ -87,15 +89,16 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("Velocity.y: " + rb.velocity.y);
 
             float halfColliderWidth = boxCollider.size.x / 2.0f;
-
-            isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
-            || Physics2D.Raycast(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null
-            || Physics2D.Raycast(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null;
-            Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
-            Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
-            Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
-
-            Debug.Log("isGrounded: " + isGrounded);
+            if (!knockedBack)
+            {
+                isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
+                || Physics2D.Raycast(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null
+                || Physics2D.Raycast(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down, groundCheckDistance, groundLayer).collider != null;
+                Debug.DrawRay(rb.position, Vector2.down * groundCheckDistance, Color.red);
+                Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+                Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
+            }
+            //Debug.Log("isGrounded: " + isGrounded);
 
             if (isGrounded && ((horizontal > 0 && previousHorizontal <= 0) || (horizontal < 0 && previousHorizontal >= 0)))
             {
@@ -108,70 +111,73 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Handle dashing
-        if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown && ((horizontal > 0.5f || horizontal < -0.5f) || (vertical < -0.5f || vertical > 0.5f)))
+        if (!knockedBack)
         {
-            Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
-            rb.velocity += inputAxes * dashForce; // Apply the dash force in the input direction
-            dashElapsed = 0.0f; // Reset dash timer
-            TakeRecoilDamage();
-            animator.SetBool("isSwimming", true);
-            dashInput = false; // Reset the dash input flag immediately
-        }
-        // Dashing animation started
-        else if (dashElapsed < dashDuration)
-        {
-            dashElapsed += Time.fixedDeltaTime;
-            if (dashElapsed >= dashDuration)
+            // Handle dashing
+            if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown && ((horizontal > 0.5f || horizontal < -0.5f) || (vertical < -0.5f || vertical > 0.5f)))
             {
-                dashInput = false;
-                animator.SetBool("isSwimming", false);
-                dashCooldownElapsed = 0.0f;
+                Vector2 inputAxes = new Vector2(horizontal, vertical).normalized;
+                rb.velocity += inputAxes * dashForce; // Apply the dash force in the input direction
+                dashElapsed = 0.0f; // Reset dash timer
+                TakeRecoilDamage();
+                animator.SetBool("isSwimming", true);
+                dashInput = false; // Reset the dash input flag immediately
             }
-        }
-        else if (dashElapsed >= dashDuration)
-        {
-
-            if (dashCooldownElapsed < dashCooldown)
+            // Dashing animation started
+            else if (dashElapsed < dashDuration)
             {
-                dashCooldownElapsed += Time.fixedDeltaTime;
+                dashElapsed += Time.fixedDeltaTime;
+                if (dashElapsed >= dashDuration)
+                {
+                    dashInput = false;
+                    animator.SetBool("isSwimming", false);
+                    dashCooldownElapsed = 0.0f;
+                }
             }
-
-            if (levelTimer.levelStarted)
+            else if (dashElapsed >= dashDuration)
             {
-                // Check if the player is grounded
-                
 
+                if (dashCooldownElapsed < dashCooldown)
+                {
+                    dashCooldownElapsed += Time.fixedDeltaTime;
+                }
+
+                if (levelTimer.levelStarted)
+                {
+                    // Check if the player is grounded
+
+
+
+                }
+
+
+
+                // If a jump is requested and the player is grounded then add a vertical force
+                if (jumpInput && isGrounded)
+                {
+                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                    jumpInput = false; // Reset the jump input flag
+                }
+
+                // Running logic
+                if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f && canRun)
+                {
+                    float targetSpeed = horizontal * currentRunSpeed;
+                    // Apply target speed but do not modify y velocity
+                    rb.velocity = new Vector2(targetSpeed, rb.velocity.y);
+                    spriteRenderer.flipX = horizontal > 0; // Flipping the sprite based on direction (note: < 0 for flip when moving left)
+
+
+
+
+                    animator.SetBool("isRunning", true);
+                }
+                else
+                {
+                    animator.SetBool("isRunning", false);
+                }
 
             }
-
-            
-
-            // If a jump is requested and the player is grounded then add a vertical force
-            if (jumpInput && isGrounded)
-            {
-                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-                jumpInput = false; // Reset the jump input flag
-            }
-
-            // Running logic
-            if (Mathf.Abs(horizontal) > 0.2f && currentRunSpeed > 0.0f && canRun)
-            {
-                float targetSpeed = horizontal * currentRunSpeed;
-                // Apply target speed but do not modify y velocity
-                rb.velocity = new Vector2(targetSpeed, rb.velocity.y);
-                spriteRenderer.flipX = horizontal > 0; // Flipping the sprite based on direction (note: < 0 for flip when moving left)
-                
-                
-                
-                
-                animator.SetBool("isRunning", true);
-            }
-            else
-            {
-                animator.SetBool("isRunning", false);
-            }
-            
         }
         
         if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
@@ -263,6 +269,16 @@ public class PlayerController : MonoBehaviour
 
         // Apply the rotation
         transform.eulerAngles = new Vector3(0, 0, rotation);
+    }
+
+    public void runAgain()
+    {
+        Invoke("knocked", 0.5f);
+    }
+
+    void knocked()
+    {
+        knockedBack = false;
     }
 
 }
