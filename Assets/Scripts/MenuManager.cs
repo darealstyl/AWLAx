@@ -21,8 +21,12 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        mainMenuPanel.transform.position = Vector3.zero;
-        levelSelectPanel.transform.position = new Vector3(Screen.width, 0, 0);
+        if (mainMenuPanel != null && levelSelectPanel != null)
+        {
+            mainMenuPanel.transform.position = Vector3.zero;
+            levelSelectPanel.transform.position = new Vector3(Screen.width, 0, 0);
+        }
+
     }
 
     public void StartGame(int i)
