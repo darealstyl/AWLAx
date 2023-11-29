@@ -9,7 +9,7 @@ public class PlayerTeleporter : MonoBehaviour
     void Start()
     {
         // Get the Rigidbody2D component from the player
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponentInParent<Rigidbody2D>();
     }
 
     void Update()
@@ -18,7 +18,7 @@ public class PlayerTeleporter : MonoBehaviour
         if (transform.position.y < dropThreshold)
         {
             // Teleport the player to the specified position
-            transform.position = teleportPosition;
+            rb.position = teleportPosition;
             // Reset the player's velocity to zero
             if (rb != null)
             {

@@ -177,6 +177,8 @@ public class PlayerController : MonoBehaviour
                     animator.SetBool("isRunning", false);
                 }
 
+
+
             }
         }
         
@@ -273,12 +275,13 @@ public class PlayerController : MonoBehaviour
 
     public void runAgain()
     {
-        Invoke("knocked", 0.5f);
+        Invoke("knocked", 0.6f);
     }
 
     void knocked()
     {
         knockedBack = false;
+        Debug.Log("knockedBack" + knockedBack);
     }
 
 }

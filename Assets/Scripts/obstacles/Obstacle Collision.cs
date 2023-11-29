@@ -38,12 +38,14 @@ public class ObstacleCollision : MonoBehaviour
                 knockbackDirection.x = 1;
             }
 
+
             float knockbackForce = 10.0f;
             rb.velocity = Vector2.zero;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-            player.knockedBack = false;
+            player.knockedBack = true;
+            Debug.Log("knockedBack" + player.knockedBack);
             player.runAgain();
-            Debug.Log("Knockback" + knockbackDirection);
+            //Debug.Log("Knockback" + knockbackDirection);
         }
         lastDamageTime = Time.time;
     }
