@@ -83,8 +83,8 @@ public class PlayerController : MonoBehaviour
                 jumpInput = true;
             }
 
-            Debug.Log("Velocity.x: " + rb.velocity.x);
-            Debug.Log("Velocity.y: " + rb.velocity.y);
+            //Debug.Log("Velocity.x: " + rb.velocity.x);
+            //Debug.Log("Velocity.y: " + rb.velocity.y);
 
             float halfColliderWidth = boxCollider.size.x / 2.0f;
 
@@ -95,7 +95,9 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(rb.position + new Vector2(halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
             Debug.DrawRay(rb.position + new Vector2(-halfColliderWidth, 0), Vector2.down * groundCheckDistance, Color.red);
 
-            if (isGrounded && (horizontal > 0 && previousHorizontal <= 0) || (horizontal < 0 && previousHorizontal >= 0))
+            Debug.Log("isGrounded: " + isGrounded);
+
+            if (isGrounded && ((horizontal > 0 && previousHorizontal <= 0) || (horizontal < 0 && previousHorizontal >= 0)))
             {
                 dustEffect.Play();
             }
@@ -212,21 +214,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy")) // Check if the collider is an enemy
-        {
-            Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // Direction away from the enemy
-            float knockbackForce = 5.0f; // Set the desired knockback force
 
-            rb.velocity = Vector2.zero; // Optional: reset current velocity
-            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-
-            //TakeDamage(5.0f); // Apply damage to the player, if needed
-        }
-
-        // Existing collision handling...
-    }
 
     void OnCollisionStay2D(Collision2D collision)
     {
