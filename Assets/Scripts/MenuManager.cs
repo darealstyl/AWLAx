@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private SceneFader sceneFader;
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject levelSelectPanel;
+
+    [SerializeField] Button[] levelButtons;
 
     private bool isMoving;
     private float moveSpeed = 900f;
@@ -27,11 +30,37 @@ public class MenuManager : MonoBehaviour
             levelSelectPanel.transform.position = new Vector3(Screen.width, 0, 0);
         }
 
+        if (StaticManager.hasDoneTutorial)
+        {
+            for (int i = 0; i < levelButtons.Length; i++)
+            {
+                levelButtons[i].interactable = true;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < levelButtons.Length; i++)
+            {
+                if (i == 0)
+                {
+                    levelButtons[i].interactable = true;
+                }
+                else
+                {
+                    levelButtons[i].interactable = false;
+                }
+            }
+        }
+
     }
 
     public void StartGame(int i)
     {
         //SceneManager.LoadScene(1);
+        if (i == 1)
+        {
+            StaticManager.hasDoneTutorial = true;
+        }
         sceneFader.FadeToScene(i);
     }
 

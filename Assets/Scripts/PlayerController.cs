@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("Velocity.x: " + rb.velocity.x);
             //Debug.Log("Velocity.y: " + rb.velocity.y);
 
-            float halfColliderWidth = boxCollider.size.x / 2.0f;
+            float halfColliderWidth = boxCollider.size.x / 2.9f;
             if (!knockedBack)
             {
                 isGrounded = Physics2D.Raycast(rb.position, Vector2.down, groundCheckDistance, groundLayer).collider != null
@@ -140,14 +140,6 @@ public class PlayerController : MonoBehaviour
                 if (dashCooldownElapsed < dashCooldown)
                 {
                     dashCooldownElapsed += Time.fixedDeltaTime;
-                }
-
-                if (levelTimer.levelStarted)
-                {
-                    // Check if the player is grounded
-
-
-
                 }
 
 
@@ -224,15 +216,25 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            canRun = isGrounded;
+            //rb.velocity.x = 0;
+        }
+
+        // Reset swimming animation if dash is complete
+        
+    }
+
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 7)
         {
             canRun = isGrounded;
-        }
 
-        // Reset swimming animation if dash is complete
-        
+        }
     }
 
     void regenHealth()
