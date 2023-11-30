@@ -10,6 +10,8 @@ public class FinishLine : MonoBehaviour
     public TMPro.TextMeshProUGUI finalTimeText; // Assign your final time Text component in the inspector
     [SerializeField] private SceneFader sceneFader;
     public bool isFinished;
+
+    public BackgroundMusicManager musicManager;
     private void Start()
     {
         // Make sure the 'Level Complete' text and final time text is not visible at the start
@@ -31,8 +33,9 @@ public class FinishLine : MonoBehaviour
         // Check if the colliding object is the player
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
+            musicManager.PlayWinSFX();
             // Stop player activity
-             // Assuming the player has a script named 'PlayerController' that controls movement
+            // Assuming the player has a script named 'PlayerController' that controls movement
             Rigidbody2D rb = playerController.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
@@ -57,6 +60,6 @@ public class FinishLine : MonoBehaviour
             isFinished = true;
         }
 
-        
+
     }
 }

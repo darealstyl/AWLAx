@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-//using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerController : MonoBehaviour
 {
@@ -53,7 +51,8 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     public float fallMultiplier = 2.5f;
     AudioSource audioSource;
-    public AudioClip deathSFX;
+    public AudioClip damageSFX;
+    public BackgroundMusicManager musicManager;
 
     // Start is called before the first frame update
     void Start()
@@ -154,7 +153,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!knockedBack)
+        if (!knockedBack && !death)
         {
             // Handle dashing
             if (dashInput && dashElapsed >= dashDuration && dashCooldownElapsed >= dashCooldown && ((horizontal > 0.5f || horizontal < -0.5f) || (vertical < -0.5f || vertical > 0.5f)))
@@ -243,7 +242,6 @@ public class PlayerController : MonoBehaviour
         if (death)
         {
             rb.velocity = Vector2.zero;
-            gameObject.SetActive(false);
         }
 
         if (isGrounded)
@@ -348,8 +346,7 @@ public class PlayerController : MonoBehaviour
         death = true;
         levelTimer.levelStarted = false;
         rb.velocity = new Vector2(0, 0);
-        audioSource.clip = deathSFX;
-        audioSource.Play();
+        musicManager.PlayDeathSFX();
     }
 
 }

@@ -331,75 +331,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d2bb21416e4348ad91235f708d316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &555811822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5589925180320949168, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+--- !u!114 &555811825 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
   m_PrefabInstance: {fileID: 5365776173838423871}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &555811824
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555811822}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.6, y: 3.15}
-    newSize: {x: 2.6, y: 3.15}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.6, y: 3.15}
-  m_EdgeRadius: 0
---- !u!114 &555811825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555811822}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a4ccd6005375f0418b6c84cf0281490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 1565283373}
-  levelCompleteText: {fileID: 1705307188}
-  levelTimer: {fileID: 464577457}
-  finalTimeText: {fileID: 2014060037}
-  sceneFader: {fileID: 1176845880}
-  isFinished: 0
 --- !u!1 &644536213
 GameObject:
   m_ObjectHideFlags: 0
@@ -12841,6 +12783,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1359029495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6919805889546058255, guid: 53d5b82fd0f4e33409b728a036c10969, type: 3}
+  m_PrefabInstance: {fileID: 1842823710}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d53b5b2a00014f14bea4bb3ed91c820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384809131
 GameObject:
   m_ObjectHideFlags: 0
@@ -13178,10 +13131,6 @@ PrefabInstance:
     - target: {fileID: 1112858853231544273, guid: 53d5b82fd0f4e33409b728a036c10969, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2207585156241180829, guid: 53d5b82fd0f4e33409b728a036c10969, type: 3}
-      propertyPath: m_Volume
-      value: 0.301
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13677,6 +13626,10 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1167281303}
+    - target: {fileID: 8155299443099291102, guid: 382592cbea9f94a4fa38bda6f135f84c, type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 1359029495}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13690,6 +13643,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: levelTimer
+      value: 
+      objectReference: {fileID: 464577457}
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1176845880}
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 1359029495}
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: finalTimeText
+      value: 
+      objectReference: {fileID: 2014060037}
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1565283373}
+    - target: {fileID: 1493420492120555662, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
+      propertyPath: levelCompleteText
+      value: 
+      objectReference: {fileID: 1705307188}
     - target: {fileID: 2221152161537486851, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.01
@@ -13734,36 +13711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinishLine
       objectReference: {fileID: 0}
-    - target: {fileID: 8572117217609000378, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      propertyPath: levelTimer
-      value: 
-      objectReference: {fileID: 464577457}
-    - target: {fileID: 8572117217609000378, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1176845880}
-    - target: {fileID: 8572117217609000378, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      propertyPath: finalTimeText
-      value: 
-      objectReference: {fileID: 2014060037}
-    - target: {fileID: 8572117217609000378, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 1565283373}
-    - target: {fileID: 8572117217609000378, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      propertyPath: levelCompleteText
-      value: 
-      objectReference: {fileID: 1705307188}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5589925180320949168, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 555811825}
-    - targetCorrespondingSourceObject: {fileID: 5589925180320949168, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 555811824}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e31ed032dcd0d764189d1ecdcd7ebff8, type: 3}
 --- !u!1001 &7294502178778541087
 PrefabInstance:

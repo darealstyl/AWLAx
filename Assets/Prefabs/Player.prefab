@@ -329,7 +329,8 @@ MonoBehaviour:
   knockedBack: 0
   maxJumpTime: 0.3
   fallMultiplier: 2.5
-  deathSFX: {fileID: 8300000, guid: 34f54794123de413da9d9db0b0ba7622, type: 3}
+  damageSFX: {fileID: 0}
+  musicManager: {fileID: 0}
 --- !u!114 &4597899762367248834
 MonoBehaviour:
   m_ObjectHideFlags: 0
