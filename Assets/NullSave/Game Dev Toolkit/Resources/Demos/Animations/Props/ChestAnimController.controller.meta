@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e6d7d748d917954cb6ba5d0be92fd72
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Props/ChestAnimController.controller
+  uploadId: 621953

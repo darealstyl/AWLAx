@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dc2450095caa28d44878e01559e72913
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Action Sequence/Support/ParamData.cs
+  uploadId: 621953

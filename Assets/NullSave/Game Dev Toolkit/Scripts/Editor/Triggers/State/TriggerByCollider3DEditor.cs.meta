@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3a9af89f462f7874fb2543077470c43d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/Triggers/State/TriggerByCollider3DEditor.cs
+  uploadId: 621953

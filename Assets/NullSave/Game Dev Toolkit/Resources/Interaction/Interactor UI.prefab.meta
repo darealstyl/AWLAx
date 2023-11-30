@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dd1dbb54c04009147bb358738eb93c76
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Interaction/Interactor UI.prefab
+  uploadId: 621953

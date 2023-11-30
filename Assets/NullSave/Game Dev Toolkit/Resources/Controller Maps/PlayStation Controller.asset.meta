@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cbc2acff1359bd744b1a24d71aa30482
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Controller Maps/PlayStation
+    Controller.asset
+  uploadId: 621953

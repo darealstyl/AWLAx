@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 198db21c928e61b4a8177f1f2b170457
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/UI/Prefabs/GDTK Button.prefab
+  uploadId: 621953

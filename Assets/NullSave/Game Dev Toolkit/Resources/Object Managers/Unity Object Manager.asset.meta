@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9eb2a71d355200040b2b2987d1885ba9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Object Managers/Unity Object
+    Manager.asset
+  uploadId: 621953

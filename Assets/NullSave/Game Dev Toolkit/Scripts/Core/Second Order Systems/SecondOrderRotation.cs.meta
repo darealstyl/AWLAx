@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f5319de03856a354c851e806d1b7142f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Second Order Systems/SecondOrderRotation.cs
+  uploadId: 621953

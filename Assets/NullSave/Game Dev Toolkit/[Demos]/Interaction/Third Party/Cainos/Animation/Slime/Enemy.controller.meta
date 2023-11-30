@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7818ead9099f8549bfe04e736d552db
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Animation/Slime/Enemy.controller
+  uploadId: 621953

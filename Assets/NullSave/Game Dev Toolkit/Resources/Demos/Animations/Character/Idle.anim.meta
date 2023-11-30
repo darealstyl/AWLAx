@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ae043df9325313469388fcaadfee06c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Character/Idle.anim
+  uploadId: 621953

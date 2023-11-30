@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5bfb203f7c325eb47ba69831c86789a5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Character/Idle
+    Armed.anim
+  uploadId: 621953

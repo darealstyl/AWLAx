@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7b5f8cc91f62e654689637b34c3022cf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Support/Loot Tables/WeightedEntry.cs
+  uploadId: 621953

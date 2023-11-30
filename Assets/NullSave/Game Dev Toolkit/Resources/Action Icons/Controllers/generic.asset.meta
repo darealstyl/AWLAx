@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66c9e5bdde6b08f4199eae6a85263a0a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Action Icons/Controllers/generic.asset
+  uploadId: 621953

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0d79a69e0d0e921429d13fc7a998cc9f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/Triggers/Destroy/DestroyAfterAudioPlayedEditor.cs
+  uploadId: 621953

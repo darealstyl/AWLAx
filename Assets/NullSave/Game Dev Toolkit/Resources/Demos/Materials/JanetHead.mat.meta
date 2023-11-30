@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a16663bb94b0d264597d6011a506f3d6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Materials/JanetHead.mat
+  uploadId: 621953

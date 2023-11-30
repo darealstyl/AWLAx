@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6620bc011e4f0e64999905827f0b5a94
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/UI/Prefabs/GDTK Label.prefab
+  uploadId: 621953

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b2d22e03adc1e9c42b2212518913a56c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/UI/Prefabs/GDTK Inline List.prefab
+  uploadId: 621953

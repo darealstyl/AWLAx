@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 528dd2a9f2da16f4cb62bda862e5145b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/Windows/EnumPopupWindow.cs
+  uploadId: 621953

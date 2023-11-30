@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cc3f2630ba3397342b75c6ba64b6a0e3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Character/Walk
+    Armed.anim
+  uploadId: 621953

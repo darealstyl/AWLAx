@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a7017eba6a17633489fd4e03a6932ca9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Controller Maps/XBOX Controller.asset
+  uploadId: 621953

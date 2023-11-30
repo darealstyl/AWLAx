@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: adff4849f9e61d242bac11b47989a904
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Tile
+    Palette/TP Grass/TX Tileset Grass_54.asset
+  uploadId: 621953

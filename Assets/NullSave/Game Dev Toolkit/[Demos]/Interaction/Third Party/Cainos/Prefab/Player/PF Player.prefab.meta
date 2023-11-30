@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef67ba864d1ecc042b5f4cf48455c0a6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Prefab/Player/PF
+    Player.prefab
+  uploadId: 621953

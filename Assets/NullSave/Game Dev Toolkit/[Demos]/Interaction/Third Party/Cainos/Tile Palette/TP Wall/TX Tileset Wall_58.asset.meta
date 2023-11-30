@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cb8f53fc5187f6e4690c3aa2bc7a6aa0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Tile
+    Palette/TP Wall/TX Tileset Wall_58.asset
+  uploadId: 621953

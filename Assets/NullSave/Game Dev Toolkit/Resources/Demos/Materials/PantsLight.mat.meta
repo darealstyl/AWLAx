@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ddb9d3e078d51744a9d8f0fe2268efc9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Materials/PantsLight.mat
+  uploadId: 621953

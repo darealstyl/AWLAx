@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: db83665b67bd27145bf9274cb4107420
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Character/[Player
+    AC].controller
+  uploadId: 621953

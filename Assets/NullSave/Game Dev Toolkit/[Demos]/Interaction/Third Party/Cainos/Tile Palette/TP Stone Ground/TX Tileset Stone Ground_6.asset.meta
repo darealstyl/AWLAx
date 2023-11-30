@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2bde7eb56ca3a194a9f9f0120251c1d2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Tile
+    Palette/TP Stone Ground/TX Tileset Stone Ground_6.asset
+  uploadId: 621953

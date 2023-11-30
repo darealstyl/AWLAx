@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e9e330d3ef4f224dad498ea411ef696
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Compass/Materials/Red Sphere.mat
+  uploadId: 621953

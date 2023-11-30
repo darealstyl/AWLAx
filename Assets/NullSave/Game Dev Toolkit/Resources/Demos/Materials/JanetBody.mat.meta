@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ecad910cd7438d4f9ed0b2b9c62858b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Materials/JanetBody.mat
+  uploadId: 621953

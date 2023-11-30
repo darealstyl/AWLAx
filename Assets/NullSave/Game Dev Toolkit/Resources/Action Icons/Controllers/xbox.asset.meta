@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eaa627921782f3546812da5b39c49a64
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Action Icons/Controllers/xbox.asset
+  uploadId: 621953

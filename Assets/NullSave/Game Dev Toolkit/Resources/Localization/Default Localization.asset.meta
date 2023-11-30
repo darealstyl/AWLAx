@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b078c2c66a47c82498027c5016be960a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Localization/Default Localization.asset
+  uploadId: 621953

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9666cab0623676b4ea7128310bca5e52
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/Support/FocusScaleUIElementEditor.cs
+  uploadId: 621953

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b68f91b69d8dc8249aea86738dc3b7bc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Action Sequence/Support/jsonActionSequenceList.cs
+  uploadId: 621953

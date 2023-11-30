@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc4ca26745f18c548a18dd45ae215bf6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Compass/Materials/Ground.mat
+  uploadId: 621953

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a27db1cb039d33542beb7a06376d0438
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Animations/UI/Debug Console.controller
+  uploadId: 621953

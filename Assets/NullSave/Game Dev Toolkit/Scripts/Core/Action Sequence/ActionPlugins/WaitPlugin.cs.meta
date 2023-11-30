@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a3cd0c981fc8f1144a9d331cd4e9790b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Action Sequence/ActionPlugins/WaitPlugin.cs
+  uploadId: 621953

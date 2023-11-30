@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 66f72e811021883488ac6a31ffad3280
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Input Managers/Rewired Input
+    Manager.asset
+  uploadId: 621953

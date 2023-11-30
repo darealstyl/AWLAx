@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd5146db781a1f7478525dfb79287315
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Broadcast Terminal/Broadcast
+    Terminal.prefab
+  uploadId: 621953

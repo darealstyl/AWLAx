@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f1f722e8eb1054c49b4a246160c7c776
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Demos/Animations/Character/Walk
+    Armed Shield Block.anim
+  uploadId: 621953

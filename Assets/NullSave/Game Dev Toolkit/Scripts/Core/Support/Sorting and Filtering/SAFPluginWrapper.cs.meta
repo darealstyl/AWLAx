@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c05a743a841e3944dad6699fe4ab0261
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Support/Sorting and Filtering/SAFPluginWrapper.cs
+  uploadId: 621953

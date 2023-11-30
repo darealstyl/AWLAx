@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0afedb5035f051e40ad614ebafa07e9e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Core/Support/Documentation/AutoDocSuppressAttribute.cs
+  uploadId: 621953

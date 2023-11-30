@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1ecad76f5afc08c4baa59e2c3946bd55
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Shader/SH
+    Sprite Shadow Mask.shader
+  uploadId: 621953

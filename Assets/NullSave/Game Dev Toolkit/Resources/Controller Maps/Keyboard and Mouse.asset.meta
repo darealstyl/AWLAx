@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: db6c250614c4cfa48855eb06b9cce8aa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/Controller Maps/Keyboard
+    and Mouse.asset
+  uploadId: 621953

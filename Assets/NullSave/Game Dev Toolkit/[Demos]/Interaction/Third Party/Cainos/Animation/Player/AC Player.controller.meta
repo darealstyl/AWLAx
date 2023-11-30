@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: eb1ae3e395b532e4d8dbc08a412e4a7d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Interaction/Third Party/Cainos/Animation/Player/AC
+    Player.controller
+  uploadId: 621953

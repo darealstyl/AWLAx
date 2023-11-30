@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2aa33bce40e337540bb2f2d6a55fe8e4
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/NullSave.GDTK.Editor.asmdef
+  uploadId: 621953

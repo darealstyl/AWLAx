@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         dashCooldownElapsed = dashCooldown;
         death = false;
         knockedBack = false;
+        StaticManager.hasDoneTutorial = true;
     }
 
     // Update is called once per frame
@@ -122,6 +123,7 @@ public class PlayerController : MonoBehaviour
                 TakeRecoilDamage();
                 animator.SetBool("isSwimming", true);
                 dashInput = false; // Reset the dash input flag immediately
+                boxCollider.enabled = false;
             }
             // Dashing animation started
             else if (dashElapsed < dashDuration)
@@ -140,6 +142,10 @@ public class PlayerController : MonoBehaviour
                 if (dashCooldownElapsed < dashCooldown)
                 {
                     dashCooldownElapsed += Time.fixedDeltaTime;
+                }
+                else
+                {
+                    boxCollider.enabled = true;
                 }
 
 

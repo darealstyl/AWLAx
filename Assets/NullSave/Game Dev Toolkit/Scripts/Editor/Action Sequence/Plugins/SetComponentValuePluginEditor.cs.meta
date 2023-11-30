@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 724bc2b302f6fbc478c89b72cc3ff75d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Scripts/Editor/Action Sequence/Plugins/SetComponentValuePluginEditor.cs
+  uploadId: 621953

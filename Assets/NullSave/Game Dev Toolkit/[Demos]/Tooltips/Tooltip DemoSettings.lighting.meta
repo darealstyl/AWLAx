@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2047224c97b609f4088772054683794e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Tooltips/Tooltip DemoSettings.lighting
+  uploadId: 621953

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 16296f4aceb07454c9a507e687d88904
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/UI/Prefabs/GDTK FlexList.prefab
+  uploadId: 621953

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c48c00a646b947c45afb4d2910d9be08
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/[Demos]/Circular Placement/Materials/Yellow
+    Cube.mat
+  uploadId: 621953

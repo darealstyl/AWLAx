@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: abd0f4974b9a5574bac07c2ec76b4280
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 217832
+  packageName: Game Developer's Toolkit (GDTK)
+  packageVersion: 1.12
+  assetPath: Assets/NullSave/Game Dev Toolkit/Resources/UI/Prefabs/GDTK Progressbar.prefab
+  uploadId: 621953
