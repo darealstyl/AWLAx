@@ -21,6 +21,7 @@ public class DeathUIManager : MonoBehaviour
 
     void Update()
     {
+        
         // Only update the UI once after the player has died
         if (!hasPlayerDied && playerController.death)
         {

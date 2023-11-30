@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class LevelTimer : MonoBehaviour
 {
     public bool levelStarted { get; set; }
-    private float startTime;
+    public float timeToBeat = 45f;
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI startText;
     public float currentTime;
@@ -31,10 +31,10 @@ public class LevelTimer : MonoBehaviour
         // If the level has started, update the timer
         if (levelStarted)
         {
-            currentTime = Time.time - startTime;
+            currentTime = timeToBeat - Time.time;
             // You can use currentTime to display the timer on the screen
             // Update the timerText with the current time
-            timerText.text = "Timer: " + currentTime.ToString("F2");
+            timerText.text = "Time left: " + currentTime.ToString("F2");
         }
     }
 
@@ -42,7 +42,7 @@ public class LevelTimer : MonoBehaviour
     {
         // Set levelStarted to true and record the start time
         levelStarted = true;
-        startTime = Time.time;
+        timeToBeat += Time.time;
         // You can also trigger any other actions that need to happen when the level starts
         if (startText != null)
             startText.gameObject.SetActive(false);
