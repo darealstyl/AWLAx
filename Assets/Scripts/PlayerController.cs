@@ -48,6 +48,11 @@ public class PlayerController : MonoBehaviour
     private float previousHorizontal = 0.0f;
     public bool knockedBack;
 
+    bool isJumping;
+    public float maxJumpTime = 1.0f; // Set your desired max jump time
+    private float jumpTimeCounter;
+    public float fallMultiplier = 2.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,12 +84,12 @@ public class PlayerController : MonoBehaviour
             {
                 dashInput = true;
             }
-
+/*
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
                 dustEffect.Play();
                 jumpInput = true;
-            }
+            }*/
 
             //Debug.Log("Velocity.x: " + rb.velocity.x);
             //Debug.Log("Velocity.y: " + rb.velocity.y);
@@ -106,6 +111,33 @@ public class PlayerController : MonoBehaviour
                 dustEffect.Play();
             }
             previousHorizontal = horizontal;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            isJumping = true;
+            jumpTimeCounter = maxJumpTime;
+            rb.velocity = Vector2.up * jumpForce;
+            dustEffect.Play();
+        }
+
+        if (Input.GetKey(KeyCode.Space) && isJumping)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y-10);
         }
 
     }
@@ -217,6 +249,17 @@ public class PlayerController : MonoBehaviour
         else
         {
             RotatePlayerBasedOnVelocity();
+        }
+
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+        }
+
+        // Clamp the falling velocity
+        if (rb.velocity.y < -30)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, -30);
         }
 
     }
