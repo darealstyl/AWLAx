@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
     public float maxJumpTime = 0.5f; // Set your desired max jump time
     private float jumpTimeCounter;
     public float fallMultiplier = 2.5f;
+    AudioSource audioSource;
+    public AudioClip deathSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -70,6 +72,8 @@ public class PlayerController : MonoBehaviour
         death = false;
         knockedBack = false;
         StaticManager.hasDoneTutorial = true;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -344,6 +348,8 @@ public class PlayerController : MonoBehaviour
         death = true;
         levelTimer.levelStarted = false;
         rb.velocity = new Vector2(0, 0);
+        audioSource.clip = deathSFX;
+        audioSource.Play();
     }
 
 }

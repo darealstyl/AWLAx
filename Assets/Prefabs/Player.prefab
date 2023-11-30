@@ -71,7 +71,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.2572888}
+  m_Offset: {x: 0.008480549, y: 0.2572888}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -81,7 +81,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.8076748, y: 0.67750454}
+  m_Size: {x: 2.0960073, y: 0.67750454}
   m_EdgeRadius: 0.05
 --- !u!50 &6365974376491875908
 Rigidbody2D:
@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 1577836078554674041}
   - component: {fileID: 8155299443099291102}
   - component: {fileID: 4597899762367248834}
+  - component: {fileID: 5176159314901636360}
   m_Layer: 6
   m_Name: Axolotl
   m_TagString: Sprite
@@ -281,7 +282,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.2572888}
+  m_Offset: {x: 0.016938686, y: 0.2572888}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -291,8 +292,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.8076748, y: 0.67750454}
-  m_EdgeRadius: 0.05
+  m_Size: {x: 2.7126627, y: 0.67750454}
+  m_EdgeRadius: 0.06
 --- !u!114 &8155299443099291102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +326,10 @@ MonoBehaviour:
   levelTimer: {fileID: 0}
   death: 0
   rotationClamp: 20
+  knockedBack: 0
+  maxJumpTime: 0.3
+  fallMultiplier: 2.5
+  deathSFX: {fileID: 8300000, guid: 34f54794123de413da9d9db0b0ba7622, type: 3}
 --- !u!114 &4597899762367248834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +344,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropThreshold: -5
   teleportPosition: {x: -6.75, y: 0.1}
+--- !u!82 &5176159314901636360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101920175099021920}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &7488393766854999381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347,6 +448,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2564989930298474431}
     m_Modifications:
+    - target: {fileID: 2282438384830233659, guid: 7697a49ea05824642b45a2fab61c81c4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2282438384830233660, guid: 7697a49ea05824642b45a2fab61c81c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
