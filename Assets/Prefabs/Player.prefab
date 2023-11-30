@@ -329,7 +329,7 @@ MonoBehaviour:
   knockedBack: 0
   maxJumpTime: 0.3
   fallMultiplier: 2.5
-  damageSFX: {fileID: 8300000, guid: 6d89542536b804f0483fe4be8efd81bf, type: 3}
+  damageSFX: {fileID: 8300000, guid: 8cb510fc5c2654ea6b512cf4e1cced24, type: 3}
   musicManager: {fileID: 0}
 --- !u!114 &4597899762367248834
 MonoBehaviour:
