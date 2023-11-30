@@ -12,16 +12,12 @@ public class StoryPanelManager : MonoBehaviour
 
     Queue<string> lines;
     string[] linesArray = {
-        "One peaceful morning you, an axolotl, decided to go on an adventure because you were bored. <Click to continue>",
-        "Somehow you ended up in a hostile world where the air is polluted with toxic compounds which will kill you if you're exposed for too long. <Click to continue>",
-        "On top of that there are also unknown entities trying to block your escape. <Click to continue>",
-        "Luckily, you aren't totally screwed.",
-        "That's because you realized that you are not like the other axolotls you grew up around. <Click to continue>",
-        "You were born a with condition that allows you to have full control over your sympathetic nervours system. <Click to continue>",
-        "By inducing a fight-or-flight response, an excessive amount of adrenaline and cortisol are released, allowing you to perform an explosive dash. <Click to continue>",
-        "However the intense stress it puts on your body leads to significant cellular damage. <Click to continue>",
-        "Thankfully, you were also born with regenerative capabilities far greater than axolotls normally have. <Click to continue>",
-        "Hopefully, with these abilities you can escape this place fast enough before the toxins in the air kill you. <Click to start tutorial>"
+        "In a tranquil underwater haven, there lived a curious and spirited axolotl. One day, driven by an adventurous itch, it ventured out to explore a legendary swamp, whispered among its kin as a place of strange beauty and eerie wonder.\n<Click to continue>",
+        "En route to this mythical swamp, the axolotl, entranced by the underwater landscapes, strayed from its path and became hopelessly lost. Its journey took an unexpected turn as it wandered into a bizarre and unforgiving world. This new environment was treacherous, filled with toxic air and mysterious, menacing entities.\n<Click to continue>",
+        "Fortunately, this was no ordinary axolotl. It possessed a rare genetic trait that granted it control over its sympathetic nervous system. This ability enabled the axolotl to perform explosive dashes, propelling itself forward with bursts of adrenaline and cortisol, vital for navigating this perilous world.\n<Click to continue>",
+        "These dashes, while powerful, taxed the axolotl's body, causing significant damage. But nature had equipped it with another remarkable gift: an enhanced regenerative capability, allowing it to recover from the physical toll of its rapid movements.\n<Click to continue>",
+        "Now, the axolotl's simple desire to explore the swamp transformed into a critical mission: to find its way back home. It must rely on its unique abilities to avoid dangers, escape the toxic environment, and outsmart the mysterious creatures that stand in its way.\n<Click to continue>",
+        "As the player, you are tasked with guiding the axolotl through this hostile world. Utilize its swift dashes and rapid healing to overcome obstacles and hazards. The journey is a testament to survival and the longing for home, as the axolotl seeks a path back to its familiar, peaceful waters. \n<Click to start tutorial>"
     };
     // Start is called before the first frame update
     void Start()
