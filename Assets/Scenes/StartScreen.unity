@@ -1154,6 +1154,10 @@ MonoBehaviour:
   sceneFader: {fileID: 678230409}
   mainMenuPanel: {fileID: 1503800000}
   levelSelectPanel: {fileID: 1758329875}
+  levelButtons:
+  - {fileID: 349082479}
+  - {fileID: 1091684494}
+  - {fileID: 1812632557}
 --- !u!1 &744741057
 GameObject:
   m_ObjectHideFlags: 0
