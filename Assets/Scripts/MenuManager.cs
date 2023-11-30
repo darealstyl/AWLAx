@@ -22,6 +22,10 @@ public class MenuManager : MonoBehaviour
     private float movementTime = 0f;
     private float totalMovementDuration = 1f; // Duration of the entire movement
 
+    public GameObject TutComp;
+    public GameObject Comp1;
+    public GameObject Comp2;
+
     private void Start()
     {
         if (mainMenuPanel != null && levelSelectPanel != null)
@@ -30,12 +34,31 @@ public class MenuManager : MonoBehaviour
             levelSelectPanel.transform.position = new Vector3(Screen.width, 0, 0);
         }
 
+        if (StaticManager.hasDoneLevel1)
+        {
+            Comp1.SetActive(true);
+        }
+        else
+        {
+            Comp1.SetActive(false);
+        }
+
+        if (StaticManager.hasDoneLevel2)
+        {
+            Comp2.SetActive(true);
+        }
+        else
+        {
+            Comp2.SetActive(false);
+        }
+
         if (StaticManager.hasDoneTutorial)
         {
             for (int i = 0; i < levelButtons.Length; i++)
             {
                 levelButtons[i].interactable = true;
             }
+            TutComp.SetActive(true);
         }
         else
         {
@@ -50,6 +73,7 @@ public class MenuManager : MonoBehaviour
                     levelButtons[i].interactable = false;
                 }
             }
+            TutComp.SetActive(false);
         }
 
     }

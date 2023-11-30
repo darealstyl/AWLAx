@@ -24,6 +24,11 @@ public class FinishLine : MonoBehaviour
     {
         if (isFinished && Input.GetKeyDown(KeyCode.Escape))
         {
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            StaticManager.hasDoneLevel1 = true;
+            else if (SceneManager.GetActiveScene().buildIndex == 4)
+                StaticManager.hasDoneLevel2 = true;
+            
             sceneFader.FadeToScene(0);
         }
     }
