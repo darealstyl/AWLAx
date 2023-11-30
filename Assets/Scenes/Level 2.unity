@@ -365,6 +365,7 @@ MonoBehaviour:
   levelTimer: {fileID: 464577457}
   finalTimeText: {fileID: 2014060037}
   sceneFader: {fileID: 1176845880}
+  isFinished: 0
 --- !u!1 &644536213
 GameObject:
   m_ObjectHideFlags: 0
@@ -14112,6 +14113,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1565283373}
+    - target: {fileID: 6319487787074047223, guid: d3236b2fc5c603a4480a8c6966622026, type: 3}
+      propertyPath: fl
+      value: 
+      objectReference: {fileID: 555811825}
     - target: {fileID: 7874220455560246281, guid: d3236b2fc5c603a4480a8c6966622026, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14289,6 +14294,10 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1167281303}
+    - target: {fileID: 8155299443099291102, guid: 382592cbea9f94a4fa38bda6f135f84c, type: 3}
+      propertyPath: maxJumpTime
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8665145493415887214, guid: 382592cbea9f94a4fa38bda6f135f84c, type: 3}
       propertyPath: m_SortingOrder
       value: 100

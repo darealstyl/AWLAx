@@ -9,7 +9,7 @@ public class FinishLine : MonoBehaviour
     public LevelTimer levelTimer; // Assign your LevelTimer script in the inspector
     public TMPro.TextMeshProUGUI finalTimeText; // Assign your final time Text component in the inspector
     [SerializeField] private SceneFader sceneFader;
-    private bool isFinished;
+    public bool isFinished;
     private void Start()
     {
         // Make sure the 'Level Complete' text and final time text is not visible at the start

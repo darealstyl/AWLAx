@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public bool knockedBack;
 
     bool isJumping;
-    public float maxJumpTime = 1.0f; // Set your desired max jump time
+    public float maxJumpTime = 0.5f; // Set your desired max jump time
     private float jumpTimeCounter;
     public float fallMultiplier = 2.5f;
 
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
             previousHorizontal = horizontal;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && dashElapsed >= dashDuration)
         {
             isJumping = true;
             jumpTimeCounter = maxJumpTime;
@@ -121,12 +121,13 @@ public class PlayerController : MonoBehaviour
             dustEffect.Play();
         }
 
-        if (Input.GetKey(KeyCode.Space) && isJumping)
+        if (Input.GetKey(KeyCode.Space) && isJumping && dashElapsed >= dashDuration)
         {
             if (jumpTimeCounter > 0)
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+                Debug.Log("jumpTimeCounter: " + jumpTimeCounter);
             }
             else
             {
@@ -134,7 +135,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) && dashElapsed >= dashDuration)
         {
             isJumping = false;
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y-10);
