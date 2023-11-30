@@ -10,7 +10,6 @@ public class StoryPanelManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public float textSpeed = 2.0f;
 
-    int lastTouchCount = 0;
     Queue<string> lines;
     string[] linesArray = {
         "One peaceful morning you, an axolotl, decided to go on an adventure because you were bored. <Click to continue>",
