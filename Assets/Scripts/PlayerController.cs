@@ -297,6 +297,7 @@ public class PlayerController : MonoBehaviour
         currentHealth += regenRate;
         currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
         healthBar.SetHealth(currentHealth);
+
     }
 
 
@@ -312,6 +313,12 @@ public class PlayerController : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, -1.0f, maxHealth);
         healthBar.SetHealth(currentHealth);
+        if (!audioSource.isPlaying && !death)
+        {
+            audioSource.clip = damageSFX;
+            audioSource.Play();
+        }
+
     }
     void RotatePlayerBasedOnVelocity()
     {
