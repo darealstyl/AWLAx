@@ -84,12 +84,12 @@ public class PlayerController : MonoBehaviour
             {
                 dashInput = true;
             }
-/*
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-            {
-                dustEffect.Play();
-                jumpInput = true;
-            }*/
+            /*
+                        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+                        {
+                            dustEffect.Play();
+                            jumpInput = true;
+                        }*/
 
             //Debug.Log("Velocity.x: " + rb.velocity.x);
             //Debug.Log("Velocity.y: " + rb.velocity.y);
@@ -138,7 +138,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) && dashElapsed >= dashDuration)
         {
             isJumping = false;
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y-10);
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y - 10);
+        }
+
+        if (levelTimer.levelStarted && levelTimer.GetCurrentTime() <= 0f)
+        {
+            Die();
         }
 
     }
@@ -212,7 +217,7 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-        
+
         if (dashElapsed >= dashDuration && animator.GetBool("isSwimming"))
         {
             animator.SetBool("isSwimming", false);
@@ -224,9 +229,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(currentHealth);
         if (currentHealth <= 0)
         {
-            death = true;
-            levelTimer.levelStarted = false;
-            rb.velocity = new Vector2(0, 0);
+            Die();
         }
 
         rb.velocity = new Vector2(
@@ -275,7 +278,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Reset swimming animation if dash is complete
-        
+
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -334,6 +337,13 @@ public class PlayerController : MonoBehaviour
     {
         knockedBack = false;
         Debug.Log("knockedBack" + knockedBack);
+    }
+
+    void Die()
+    {
+        death = true;
+        levelTimer.levelStarted = false;
+        rb.velocity = new Vector2(0, 0);
     }
 
 }
