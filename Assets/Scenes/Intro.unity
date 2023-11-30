@@ -1079,6 +1079,7 @@ MonoBehaviour:
   sceneFader: {fileID: 678230409}
   mainMenuPanel: {fileID: 0}
   levelSelectPanel: {fileID: 0}
+  levelButtons: []
 --- !u!1 &1097207166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 678230409}
   dialogueText: {fileID: 141805766}
-  textSpeed: 20
+  textSpeed: 35
 --- !u!1 &1331482519
 GameObject:
   m_ObjectHideFlags: 0
