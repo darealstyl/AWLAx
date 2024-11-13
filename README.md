@@ -1,6 +1,13 @@
 # AWLAx
 Repository for our COMP 376 Final Project video game, A Whole Lotta Axolotl
 
+It is a 2D platformer that is focused on completing the levels in the shortest time possible by jumping and avoiding obstacles.
+
+The game has a simple tutorial, and 2 full levels. It includes music, sound effects, and a simple narrative intro.
+
+# Play Game
+
+Download the Build folder to play the game.
 
 # Photos
 
